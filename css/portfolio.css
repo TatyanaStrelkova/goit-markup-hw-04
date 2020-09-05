@@ -1,0 +1,83 @@
+.section-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* Фильтры */
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--main-white-color);
+  background-color: var(--hover-text-color);
+}
+
+/* Кнопки */
+
+.filter-button {
+  display: inline-flex;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 0 solid transparent;
+
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.filter-list .item:not(:last-child) {
+  margin-right: 8px;
+}
+/* Проекты */
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item:not(:nth-child(3n)) {
+  flex-basis: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+
+.project-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.project-item {
+  /* border: 1px solid #eeeeee; */
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.description-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border: 1px solid #eeeeee;
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
